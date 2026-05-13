@@ -1,70 +1,39 @@
 # Light in You Trust — Website
 
-Premium editorial single-page site for Light in You Trust — a registered 80G
-charitable trust in India.
-
-Pure HTML / CSS / JS — no build step, no dependencies. Hosted free on
-GitHub Pages at [lightinyoutrust.org](https://lightinyoutrust.org).
+Premium one-page site for Light in You Trust. Pure HTML / CSS / JS — no build step, no dependencies.
 
 ## Files
-
-| Path                             | Purpose                                            |
-|----------------------------------|----------------------------------------------------|
-| `index.html`                     | Markup — every section in one document             |
-| `styles.css`                     | Site stylesheet (imports `colors_and_type.css`)    |
-| `colors_and_type.css`            | Design tokens (colors, type, spacing, motion)      |
-| `script.js`                      | Footer year, impact-numeral fade-in, UPI copy, mobile menu |
-| `CNAME`                          | Custom domain config (GitHub Pages)                |
-| `sitemap.xml`, `robots.txt`      | SEO                                                |
-| `assets/`                        | Logo SVGs, favicon, OG share image, UPI QR         |
-| `images/`                        | Photography — placeholders in repo, swap with real |
-
-## Brand
-
-- **Type:** Newsreader (Google Fonts, display serif) + Public Sans (Google Fonts, UI sans).  
-  Substitutes for GT Sectra and Söhne. Swap the @import at the top of
-  `colors_and_type.css` to use licensed faces.
-- **Palette:** ink `#0a0a0a` + bone `#f8f5ee` + saffron `#c8551c`. Two alternates
-  (Heritage Burgundy `#6b1f2a`, Forest Editorial `#1a3d2e`) are defined in
-  `colors_and_type.css` — toggle by adding `palette-burgundy` or
-  `palette-forest` to the `<html>` element.
+- `index.html` — markup
+- `styles.css` — premium styling (cream + forest + gold palette, serif/sans pairing)
+- `script.js` — animated impact counters, mobile menu, current year
 
 ## Local preview
+Just open `index.html` in a browser. Done.
 
-Open `index.html` in any browser. No build required.
+## Deploy free on GitHub Pages
 
-## Deploy (GitHub Pages)
+1. Create a new public repo on GitHub, e.g. `light-in-you-trust`.
+2. From this folder, run:
+   ```
+   git init
+   git add .
+   git commit -m "Initial site"
+   git branch -M main
+   git remote add origin https://github.com/<your-username>/light-in-you-trust.git
+   git push -u origin main
+   ```
+3. On GitHub: **Settings → Pages → Source: `main` / `/ (root)`** → Save.
+4. Site goes live at `https://<your-username>.github.io/light-in-you-trust/` in ~1 minute.
 
-This repo is already configured for GitHub Pages with a custom domain via the
-`CNAME` file. Push to `main`, GitHub Pages serves it. Free HTTPS via Let's
-Encrypt auto-provisions.
+### Custom domain (optional)
+- Buy a domain (e.g. `lightinyoutrust.org`) from Namecheap / GoDaddy.
+- In repo: **Settings → Pages → Custom domain** → enter your domain.
+- At your registrar, add a `CNAME` record pointing to `<your-username>.github.io`.
+- Free HTTPS auto-provisions in a few minutes.
 
-## Editing checklist before going live
-
-1. **Razorpay link** — `index.html`, search for `pages.razorpay.com/lightinyoutrust`
-   and swap in your actual page URL.
-2. **UPI ID** — `index.html`, replace `lightinyou@upi` (appears once in the
-   donate panel and once in the FAQ; the copy-to-clipboard reads from
-   `data-copy="…"`).
-3. **UPI QR** — `assets/upi-qr-placeholder.png` is a stylised placeholder.
-   Generate a real QR for your UPI ID (e.g. via `https://www.qrcode-monkey.com`)
-   and save as `assets/upi-qr.png`, then update the `<img src>` in `index.html`.
-4. **Photography** — `images/README.md` lists every photograph slot with
-   dimensions and a content brief. Replace each JPG in place; no markup changes.
-5. **Phone, address, contact** — search for `+91 00000 00000` and `[Your City]`
-   in `index.html`.
-6. **Impact numerals** — search for `data-count` and update both the attribute
-   and the displayed text.
-7. **Annual report PDF** — link the "Download Annual Report" button to your
-   real PDF.
-
-## Accessibility & SEO
-
-- Open Graph + Twitter Card meta tags wired to `assets/og-image.png` (1200×630
-  PNG, scannable by WhatsApp / iMessage / Slack).
-- NGO schema.org JSON-LD in `<head>`.
-- Semantic HTML; every image has alt text; form labels are properly associated.
-- Eyebrow / label text starts at 10px / 0.22em tracking — institutional
-  rather than micro.
-
-— Built as a one-time editorial redesign. Push to main and Pages does the rest.
+## What to fill in before launch
+- Bank / UPI details in the **Donate** section (`index.html` → search `XXXX`)
+- Phone, email, address (`+91 00000 00000`, `hello@lightinyoutrust.org`)
+- Real impact numbers in the `data-count` attributes
+- Replace stat numbers in program cards with your actual figures
+- Optional: add a `favicon.ico` and an `og-image.jpg` for social previews
