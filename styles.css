@@ -783,6 +783,21 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 @media (max-width: 900px) {
   .nav-links, .nav-cta { display: none; }
   .menu-toggle { display: block; margin-left: auto; }
+  .nav-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bone);
+    padding: 24px 28px;
+    gap: 20px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 12px 24px rgba(10, 10, 10, 0.06);
+  }
+  .nav-open .nav-links a { font-size: 1rem; padding: 6px 0; }
+  .nav-open .nav-cta { display: inline-block; margin: 4px 28px 24px; }
   .section { padding: 90px 0; }
   .programs-grid,
   .impact-grid,

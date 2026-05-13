@@ -26,21 +26,13 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 counters.forEach(c => io.observe(c));
 
-// Mobile menu (simple)
+// Mobile menu
 const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
 const links = document.querySelector('.nav-links');
 toggle?.addEventListener('click', () => {
-  if (links.style.display === 'flex') {
-    links.style.display = '';
-  } else {
-    links.style.display = 'flex';
-    links.style.position = 'absolute';
-    links.style.top = '100%';
-    links.style.left = '0';
-    links.style.right = '0';
-    links.style.flexDirection = 'column';
-    links.style.background = 'var(--cream)';
-    links.style.padding = '20px 28px';
-    links.style.borderBottom = '1px solid var(--line)';
-  }
+  nav.classList.toggle('nav-open');
+});
+links?.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => nav.classList.remove('nav-open'));
 });
