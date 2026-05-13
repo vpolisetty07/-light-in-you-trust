@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Light in You Trust">
+  <rect width="64" height="64" fill="#0a0a0a"></rect>
+  
+  <g fill="#f8f5ee">
+    <path d="M19 16 h13 v1.6 q-2.5 0.2 -3.5 0.8 q-1 0.6 -1.4 2 q-0.4 1.4 -0.4 4 v22 q0 2.6 0.4 3.8 q0.4 1.2 1.4 1.6 q1 0.4 3.4 0.6 h6 q3 0 4.4 -0.5 q1.4 -0.5 2.2 -1.7 q0.8 -1.2 1.4 -3.7 l0.8 -3.4 h1.4 l-1 11 H19 v-1.6 q2.4 -0.2 3.4 -0.6 q1 -0.4 1.4 -1.6 q0.4 -1.2 0.4 -3.8 v-22 q0 -2.6 -0.4 -4 q-0.4 -1.4 -1.4 -2 q-1 -0.6 -3.4 -0.8 z"></path>
+  </g>
+  
+  <circle cx="47" cy="20" r="2.2" fill="#c8551c"></circle>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 160" role="img" aria-label="Light in You Trust">
+  <g transform="translate(20,12)">
+    <circle cx="68" cy="68" r="60" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"></circle>
+    <g fill="currentColor" transform="translate(68,68) scale(0.62) translate(-100,-100)">
+      <path d="M65 56 h35 v3 q-6 0.4 -8.5 1.6 q-2.5 1.2 -3.5 4 q-1 2.8 -1 8 v52 q0 6 1 8.6 q1 2.6 3.5 3.6 q2.5 1 8 1.3 h12 q7 0 10.2 -1 q3.2 -1 5.2 -3.6 q2 -2.6 3.2 -8.2 l1.8 -7 h3.2 l-2.2 24 H65 v-3 q5.5 -0.3 8 -1.3 q2.5 -1 3.5 -3.6 q1 -2.6 1 -8.6 v-52 q0 -5.2 -1 -8 q-1 -2.8 -3.5 -4 q-2.5 -1.2 -8 -1.6 z"></path>
+    </g>
+    <circle cx="103" cy="38" r="2.8" fill="currentColor"></circle>
+  </g>
+  <line x1="170" y1="32" x2="170" y2="128" stroke="currentColor" stroke-width="0.75"></line>
+  <g transform="translate(196,0)">
+    <text x="0" y="78" font-family="Newsreader, &#39;EB Garamond&#39;, Georgia, serif" font-weight="400" font-size="44" letter-spacing="0.02em" fill="currentColor">Light in You</text>
+    <text x="0" y="108" font-family="Public Sans, -apple-system, system-ui, sans-serif" font-weight="600" font-size="11" letter-spacing="0.62em" fill="currentColor">T — R — U — S — T</text>
+  </g>
+</svg>
