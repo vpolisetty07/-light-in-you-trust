@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0a0a0a"/>
+  <!-- outer flame glow -->
+  <path d="M32 14 Q38 24 36 34 Q32 40 28 34 Q26 24 32 14 Z" fill="#e09d3a" opacity="0.35"/>
+  <!-- main flame -->
+  <path d="M32 18 Q36 26 34 33 Q32 37 30 33 Q28 26 32 18 Z" fill="#e09d3a"/>
+  <!-- flame core -->
+  <path d="M32 24 Q33 29 32 33 Q31 29 32 24 Z" fill="#faf6ed"/>
+  <!-- diya base -->
+  <path d="M16 42 Q32 54 48 42 L45 47 Q32 56 19 47 Z" fill="#e09d3a"/>
+  <!-- rim -->
+  <ellipse cx="32" cy="42" rx="16" ry="2.5" fill="#b8762a"/>
+</svg>

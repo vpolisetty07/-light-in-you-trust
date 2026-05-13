@@ -3,20 +3,59 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Light in You Trust — serving communities through medical camps, food for the elderly, and education for children of single parents." />
+<meta name="theme-color" content="#0a0a0a" />
+
 <title>Light in You Trust — Kindness in Action</title>
+<meta name="description" content="A registered charitable trust serving communities through free medical camps, meals for the elderly, and education for children of single parents." />
+
+<!-- Open Graph (WhatsApp, iMessage, Facebook, LinkedIn) -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lightinyoutrust.org/" />
+<meta property="og:title" content="Light in You Trust — Kindness in Action" />
+<meta property="og:description" content="Free medical camps · Meals for the elderly · Education for children. A registered 80G charitable trust." />
+<meta property="og:image" content="https://lightinyoutrust.org/og-image.svg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Light in You Trust" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Light in You Trust — Kindness in Action" />
+<meta name="twitter:description" content="Free medical camps · Meals for the elderly · Education for children." />
+<meta name="twitter:image" content="https://lightinyoutrust.org/og-image.svg" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="apple-touch-icon" href="favicon.svg" />
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+<!-- Reusable diya logo SVG (hidden, referenced via <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="diya" viewBox="0 0 64 64">
+      <path d="M32 12 Q39 24 36 36 Q32 42 28 36 Q25 24 32 12 Z" fill="#e09d3a" opacity="0.35"/>
+      <path d="M32 16 Q37 26 34.5 35 Q32 39 29.5 35 Q27 26 32 16 Z" fill="#e09d3a"/>
+      <path d="M32 24 Q33.5 30 32 35 Q30.5 30 32 24 Z" fill="#faf6ed"/>
+      <path d="M14 42 Q32 56 50 42 L47 47 Q32 58 17 47 Z" fill="#0a0a0a"/>
+      <ellipse cx="32" cy="42" rx="18" ry="2.5" fill="#0a0a0a"/>
+      <ellipse cx="32" cy="41" rx="13" ry="1.2" fill="#e09d3a" opacity="0.6"/>
+    </symbol>
+  </defs>
+</svg>
+
 <header class="nav">
   <div class="nav-inner">
     <a href="#top" class="brand">
-      <span class="brand-mark">✦</span>
-      <span class="brand-text">Light in You<small>Trust</small></span>
+      <svg class="brand-logo" aria-hidden="true"><use href="#diya"/></svg>
+      <span class="brand-text">Light in You<small>T R U S T</small></span>
     </a>
     <nav class="nav-links">
       <a href="#mission">Mission</a>
@@ -34,14 +73,15 @@
 <section id="top" class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <p class="eyebrow">A Registered Charitable Trust</p>
+    <svg class="hero-mark" aria-hidden="true"><use href="#diya"/></svg>
+    <span class="eyebrow">A Registered 80G Charitable Trust</span>
     <h1>Lighting lives, <em>one act of kindness</em> at a time.</h1>
     <p class="lede">
       We bring healthcare to those who cannot reach it, meals to elders who eat alone,
       and education to children raised by a single parent. Three missions. One light.
     </p>
     <div class="hero-actions">
-      <a href="#donate" class="btn btn-primary btn-lg">Donate Now</a>
+      <a href="#donate" class="btn btn-primary btn-lg">Donate Now →</a>
       <a href="#involved" class="btn btn-ghost btn-lg">Volunteer With Us</a>
     </div>
     <div class="hero-trust">
@@ -54,12 +94,13 @@
 </section>
 
 <section id="mission" class="section section-mission">
-  <div class="container">
-    <p class="eyebrow center">Our Mission</p>
-    <h2 class="section-title center">
+  <div class="container center">
+    <span class="eyebrow center">Our Mission</span>
+    <span class="divider"></span>
+    <h2 class="section-title">
       We believe every person deserves <em>care, dignity, and a future.</em>
     </h2>
-    <p class="section-sub center">
+    <p class="section-sub">
       Light in You Trust exists to fill the quiet gaps the world overlooks —
       a grandmother without a hot meal, a child without school fees, a village without a doctor.
       We show up. We do the work. We stay.
@@ -69,13 +110,13 @@
 
 <section id="programs" class="section section-programs">
   <div class="container">
-    <p class="eyebrow">What We Do</p>
-    <h2 class="section-title">Three programs. Real change.</h2>
+    <span class="eyebrow">What We Do</span>
+    <h2 class="section-title">Three programs. <em>Real change.</em></h2>
 
     <div class="programs-grid">
       <article class="program-card">
         <div class="program-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-7 10-7 10"/><path d="M9 12h2v-2h2v2h2v2h-2v2h-2v-2H9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </div>
         <h3>Medical Camps</h3>
         <p>
@@ -90,7 +131,7 @@
 
       <article class="program-card featured">
         <div class="program-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10h16l-1 10H5z"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M9 14h6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18l-1.5 9h-15z"/><path d="M7 11V8a5 5 0 0 1 10 0v3"/><path d="M10 15h4"/></svg>
         </div>
         <h3>Food for the Elderly</h3>
         <p>
@@ -105,7 +146,7 @@
 
       <article class="program-card">
         <div class="program-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"/><path d="M21 8v6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 2 3 3.5 6 3.5s6-1.5 6-3.5v-5"/><path d="M22 9v6"/></svg>
         </div>
         <h3>Education for Single-Parent Children</h3>
         <p>
@@ -123,8 +164,8 @@
 
 <section id="impact" class="section section-impact">
   <div class="container">
-    <p class="eyebrow center light">Our Impact</p>
-    <h2 class="section-title center light">Numbers that mean lives changed.</h2>
+    <span class="eyebrow light center">Our Impact</span>
+    <h2 class="section-title light center">Numbers that mean <em>lives changed.</em></h2>
 
     <div class="impact-grid">
       <div class="impact-stat">
@@ -150,8 +191,8 @@
 <section id="story" class="section section-story">
   <div class="container story-grid">
     <div class="story-text">
-      <p class="eyebrow">Our Story</p>
-      <h2 class="section-title">It started with one meal, one neighbor.</h2>
+      <span class="eyebrow">Our Story</span>
+      <h2 class="section-title">It started with <em>one meal,</em> one neighbor.</h2>
       <p>
         Light in You Trust was born the day a few friends realized the elderly woman down
         the street hadn't eaten a proper meal in days. One tiffin became ten. Ten became
@@ -166,7 +207,7 @@
     </div>
     <div class="story-quote">
       <blockquote>
-        “When you light a lamp for someone else, it also brightens your own path.”
+        When you light a lamp for someone else, it also brightens your own path.
       </blockquote>
       <cite>— A guiding principle</cite>
     </div>
@@ -175,8 +216,8 @@
 
 <section id="involved" class="section section-involved">
   <div class="container">
-    <p class="eyebrow center">Get Involved</p>
-    <h2 class="section-title center">Three ways to be the light.</h2>
+    <span class="eyebrow center">Get Involved</span>
+    <h2 class="section-title center">Three ways to <em>be the light.</em></h2>
 
     <div class="involved-grid">
       <div class="involved-card">
@@ -204,12 +245,12 @@
 <section id="donate" class="section section-donate">
   <div class="container donate-inner">
     <div>
-      <p class="eyebrow light">Make a Donation</p>
-      <h2 class="section-title light">Your kindness, multiplied.</h2>
+      <span class="eyebrow light">Make a Donation</span>
+      <h2 class="section-title light">Your kindness, <em>multiplied.</em></h2>
       <p class="donate-sub">
-        ₹500 feeds an elder for a week.<br/>
-        ₹2,000 sponsors a medical camp visit.<br/>
-        ₹10,000 keeps a child in school for a term.
+        <strong>₹500</strong> feeds an elder for a week.<br/>
+        <strong>₹2,000</strong> sponsors a medical camp visit.<br/>
+        <strong>₹10,000</strong> keeps a child in school for a term.
       </p>
     </div>
     <div class="donate-box">
@@ -228,9 +269,9 @@
 <section id="contact" class="section section-contact">
   <div class="container contact-grid">
     <div>
-      <p class="eyebrow">Contact</p>
-      <h2 class="section-title">Come, walk with us.</h2>
-      <p>Questions, partnerships, or simply curious? We'd love to hear from you.</p>
+      <span class="eyebrow">Contact</span>
+      <h2 class="section-title">Come, <em>walk with us.</em></h2>
+      <p style="color: var(--ink-soft); font-size: 1.075rem; margin: 0;">Questions, partnerships, or simply curious? We'd love to hear from you.</p>
       <ul class="contact-list">
         <li><span>Email</span><a href="mailto:hello@lightinyoutrust.org">hello@lightinyoutrust.org</a></li>
         <li><span>Phone</span><a href="tel:+910000000000">+91 00000 00000</a></li>
@@ -247,24 +288,37 @@
 </section>
 
 <footer class="footer">
-  <div class="container footer-inner">
-    <div>
-      <div class="brand brand-footer">
-        <span class="brand-mark">✦</span>
-        <span class="brand-text">Light in You<small>Trust</small></span>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a href="#top" class="brand">
+          <svg class="brand-logo" aria-hidden="true"><use href="#diya"/></svg>
+          <span class="brand-text">Light in You<small>T R U S T</small></span>
+        </a>
+        <p class="footer-tag">Kindness, in action.</p>
       </div>
-      <p class="footer-tag">Kindness, in action.</p>
-    </div>
-    <div class="footer-links">
-      <a href="#mission">Mission</a>
-      <a href="#programs">Programs</a>
-      <a href="#impact">Impact</a>
-      <a href="#involved">Get Involved</a>
-      <a href="#contact">Contact</a>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <div class="footer-links">
+          <a href="#mission">Mission</a>
+          <a href="#programs">Programs</a>
+          <a href="#impact">Impact</a>
+          <a href="#story">Our Story</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Act</h4>
+        <div class="footer-links">
+          <a href="#donate">Donate</a>
+          <a href="#involved">Volunteer</a>
+          <a href="#contact">Partner</a>
+          <a href="mailto:hello@lightinyoutrust.org">Contact</a>
+        </div>
+      </div>
     </div>
     <div class="footer-meta">
-      <p>© <span id="year"></span> Light in You Trust. All rights reserved.</p>
-      <p>Registered Charitable Trust · 80G & 12A Certified</p>
+      <p>© <span id="year"></span> Light in You Trust · Registered Charitable Trust · 80G & 12A Certified</p>
+      <p>Made with care in India · <a href="https://lightinyoutrust.org" style="color: var(--gold);">lightinyoutrust.org</a></p>
     </div>
   </div>
 </footer>

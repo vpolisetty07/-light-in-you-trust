@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#1a1410"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#e09d3a" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#e09d3a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#e09d3a" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <circle cx="300" cy="315" r="350" fill="url(#glow)"/>
+
+  <!-- gold accent border -->
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e09d3a" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- diya logo (left) -->
+  <g transform="translate(180, 240)">
+    <!-- glow halo -->
+    <circle cx="75" cy="60" r="80" fill="#e09d3a" opacity="0.15"/>
+    <!-- outer flame -->
+    <path d="M75 0 Q92 30 88 60 Q75 80 62 60 Q58 30 75 0 Z" fill="#e09d3a" opacity="0.4"/>
+    <!-- main flame -->
+    <path d="M75 10 Q88 32 84 56 Q75 70 66 56 Q62 32 75 10 Z" fill="#e09d3a"/>
+    <!-- flame core -->
+    <path d="M75 25 Q79 40 75 55 Q71 40 75 25 Z" fill="#faf6ed"/>
+    <!-- diya base -->
+    <path d="M20 90 Q75 130 130 90 L120 110 Q75 138 30 110 Z" fill="#e09d3a"/>
+    <ellipse cx="75" cy="90" rx="55" ry="8" fill="#b8762a"/>
+  </g>
+
+  <!-- text block (right) -->
+  <g transform="translate(440, 200)">
+    <!-- eyebrow -->
+    <text x="0" y="0" font-family="Inter, sans-serif" font-size="18" font-weight="600" letter-spacing="5" fill="#e09d3a">A REGISTERED CHARITABLE TRUST</text>
+
+    <!-- main wordmark -->
+    <text x="0" y="80" font-family="'Cormorant Garamond', Georgia, serif" font-size="92" font-weight="500" fill="#faf6ed">Light in You</text>
+    <text x="0" y="80" font-family="'Cormorant Garamond', Georgia, serif" font-size="92" font-style="italic" font-weight="500" fill="#e09d3a" dx="430">.</text>
+
+    <!-- TRUST -->
+    <text x="0" y="125" font-family="Inter, sans-serif" font-size="22" font-weight="600" letter-spacing="14" fill="#faf6ed">T  R  U  S  T</text>
+
+    <!-- divider -->
+    <line x1="0" y1="160" x2="80" y2="160" stroke="#e09d3a" stroke-width="2"/>
+
+    <!-- tagline -->
+    <text x="0" y="210" font-family="'Cormorant Garamond', Georgia, serif" font-size="36" font-style="italic" fill="#d4c9b8">Kindness, in action.</text>
+
+    <!-- description -->
+    <text x="0" y="260" font-family="Inter, sans-serif" font-size="18" fill="#a39888">Medical camps  ·  Meals for the elderly  ·  Education for children</text>
+  </g>
+
+  <!-- URL footer -->
+  <text x="600" y="570" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="500" letter-spacing="3" fill="#e09d3a">LIGHTINYOUTRUST.ORG</text>
+</svg>
