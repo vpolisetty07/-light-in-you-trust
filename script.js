@@ -31,8 +31,12 @@ const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 const links = document.querySelector('.nav-links');
 toggle?.addEventListener('click', () => {
-  nav.classList.toggle('nav-open');
+  const open = nav.classList.toggle('nav-open');
+  toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
 links?.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => nav.classList.remove('nav-open'));
+  a.addEventListener('click', () => {
+    nav.classList.remove('nav-open');
+    toggle?.setAttribute('aria-expanded', 'false');
+  });
 });
